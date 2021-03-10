@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => { //GET ALL
     try {
-        const news = await New.find().populate(['pilots']);
+        const news = await New.find();
 
         return res.send(news);
 
@@ -18,7 +18,7 @@ router.get('/', async (req, res) => { //GET ALL
 
 router.get('/:newId', async (req, res) => { //GET BY ID
     try {
-        const news = await New.findById(req.params.newId).populate(['pilots']);
+        const news = await New.findById(req.params.newId);
 
         return res.send(news);
 

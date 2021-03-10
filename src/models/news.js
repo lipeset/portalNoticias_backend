@@ -17,10 +17,10 @@ const NewsSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    author: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Pilot',
-    }]
+    author: {
+        type: String,
+        required: true,
+    }
 });
 
 const News = mongoose.model('News', NewsSchema);
