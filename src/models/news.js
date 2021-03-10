@@ -20,10 +20,6 @@ const NewsSchema = mongoose.Schema({
     author: {
         type: String,
         required: true,
-    },
-    avatarCode: {
-        type: String,
-        required: true,
     }
 });
 

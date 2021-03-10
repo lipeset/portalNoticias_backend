@@ -39,6 +39,12 @@ const PilotSchema = mongoose.Schema({
         required: true,
         default: 0
     },
+    avatarUrl: {
+        type: String,
+    },
+    profileUrl: {
+        type: String,
+    },
     createdAt: {
         type: Date,
         default: Date.now
