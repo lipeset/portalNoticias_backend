@@ -18,8 +18,8 @@ const NewsSchema = mongoose.Schema({
         default: Date.now
     },
     author: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Pilot',
+        type: String,
+        required: true,
     }]
 });
 
