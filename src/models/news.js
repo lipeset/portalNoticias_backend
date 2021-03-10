@@ -5,10 +5,6 @@ const NewsSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    author: {
-        type: String,
-        required: true
-    },
     newsContent: {
         type: String,
         required: true
@@ -20,7 +16,11 @@ const NewsSchema = mongoose.Schema({
     newsDate: {
         type: Date,
         default: Date.now
-    }
+    },
+    author: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Pilot',
+    }]
 });
 
 const News = mongoose.model('News', NewsSchema);
