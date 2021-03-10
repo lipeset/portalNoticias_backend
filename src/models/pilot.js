@@ -39,10 +39,6 @@ const PilotSchema = mongoose.Schema({
         required: true,
         default: 0
     },
-    avatarPic: {
-        type: String,
-        required: true,
-    },
     createdAt: {
         type: Date,
         default: Date.now
