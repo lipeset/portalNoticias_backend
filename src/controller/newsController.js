@@ -1,13 +1,12 @@
 const express = require('express');
 const New = require('../models/news');
-const Pilot = require('../models/pilot');
 
 const router = express.Router();
 
 
 router.get('/', async (req, res) => { //GET ALL
     try {
-        const news = await New.find().populate('pilots');
+        const news = await New.find().populate('author');
 
         return res.send(news);
 
