@@ -1,12 +1,13 @@
 const express = require('express');
 const New = require('../models/news');
+const Pilot = require('../models/pilot');
 
 const router = express.Router();
 
 
 router.get('/', async (req, res) => { //GET ALL
     try {
-        const news = await New.find();
+        const news = await New.find().populate(['pilots']);
 
         return res.send(news);
 
@@ -17,7 +18,7 @@ router.get('/', async (req, res) => { //GET ALL
 
 router.get('/:newId', async (req, res) => { //GET BY ID
     try {
-        const news = await New.findById(req.params.newId);
+        const news = await New.findById(req.params.newId).populate(['pilots']);
 
         return res.send(news);
 
