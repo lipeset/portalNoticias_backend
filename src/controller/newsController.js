@@ -8,7 +8,11 @@ router.get('/', async (req, res) => { //GET ALL
     try {
         const news = await New.find().populate('author');
 
-        return res.send(news);
+        if (news.length < 1) {
+            return res.send("Nenhuma notícia.")
+        } else {
+            return res.send(news);
+        }
 
     } catch (err) {
         return res.status(400).send({ error: 'Erro ao listar todas as notícias' })
