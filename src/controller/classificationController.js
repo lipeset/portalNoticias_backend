@@ -15,7 +15,7 @@ router.get('/', async (req, res) => { //GET ALL
         }
 
     } catch (err) {
-        return res.status(400).send({ error: 'Erro ao listar todas as notícias' })
+        return res.status(400).send({ error: 'Erro ao listar todas as classificações' })
     }
 })
 
@@ -26,7 +26,7 @@ router.get('/:classificationId', async (req, res) => { //GET BY ID
         return res.send(classif);
 
     } catch (err) {
-        return res.status(400).send({ error: 'Erro ao listar a notícia' })
+        return res.status(400).send({ error: 'Erro ao listar a classificação' })
     }
 })
 
@@ -59,7 +59,7 @@ router.delete('/:classificationId', async (req, res) => { //DELETAR NOTÍCIA
         return res.send();
 
     } catch (err) {
-        return res.status(400).send({ error: 'Erro ao excluir a notícia' })
+        return res.status(400).send({ error: 'Erro ao excluir a classificação' })
     }
 })
 
