@@ -21,7 +21,7 @@ router.get('/', async (req, res) => { //GET ALL
 
 router.get('/:newId', async (req, res) => { //GET BY ID
     try {
-        const news = await New.findById(req.params.newId).populate('pilots');
+        const news = await New.findById(req.params.newId).populate('author');
 
         return res.send(news);
 
