@@ -42,6 +42,12 @@ const PilotSchema = mongoose.Schema({
     avatarUrl: {
         type: String,
     },
+    gridUrl: {
+        type: String,
+    },
+    profileUrl: {
+        type: String,
+    },
     profileUrl: {
         type: String,
     },
