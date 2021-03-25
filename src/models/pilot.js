@@ -48,9 +48,6 @@ const PilotSchema = mongoose.Schema({
     profileUrl: {
         type: String,
     },
-    profileUrl: {
-        type: String,
-    },
     createdAt: {
         type: Date,
         default: Date.now
