@@ -5,6 +5,10 @@ const TeamSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    alias: {
+        type: String,
+        required: true
+    },
     champCamp: {
         type: Number,
         required: true,
