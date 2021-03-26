@@ -12,7 +12,7 @@ router.get('/', async (req, res) => { //GET ALL
         return res.send(teams);
 
     } catch (err) {
-        return res.status(400).send({ error: 'Erro ao listar todos as equipes' })
+        return res.status(400).send({ error: 'Erro ao listar todas as equipes' })
     }
 })
 
@@ -29,9 +29,9 @@ router.get('/:teamId', async (req, res) => { //GET BY ID
 
 router.post('/register', async (req, res) => { //POSTAR NOVA EQUIPE
     try {
-        const { fullName, pilots } = req.body;
+        const { fullName, alias, pilots } = req.body;
 
-        const team = await Team.create({ fullName });
+        const team = await Team.create({ fullName, alias });
 
         if (pilots != undefined) {
             await Promise.all(pilots.map(async pilot => {
