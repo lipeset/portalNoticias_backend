@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => { //GET ALL
     try {
-        const classif = await Classification.find().populate('pilot');
+        const classif = await Classification.find().populate('team');
 
         if (classif.length < 1) {
             return res.send("Nenhuma classificação.")
@@ -21,7 +21,7 @@ router.get('/', async (req, res) => { //GET ALL
 
 router.get('/:classificationId', async (req, res) => { //GET BY ID
     try {
-        const classif = await Classification.findById(req.params.classificationId).populate('pilot');
+        const classif = await Classification.findById(req.params.classificationId).populate('team');
 
         return res.send(classif);
 
