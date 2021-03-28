@@ -1,5 +1,5 @@
 const express = require('express');
-const Classification = require('../models/classification');
+const Classification = require('../models/pilotClassification');
 
 const router = express.Router();
 
@@ -63,4 +63,4 @@ router.delete('/:classificationId', async (req, res) => { //DELETAR NOTÍCIA
     }
 })
 
-module.exports = app => app.use('/classification', router);
+module.exports = app => app.use('/pilotclassification', router);

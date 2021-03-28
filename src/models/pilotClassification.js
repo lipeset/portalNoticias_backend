@@ -1,6 +1,6 @@
 const mongoose = require('../database/index');
 
-const ClassificationSchema = mongoose.Schema({
+const PilotClassificationSchema = mongoose.Schema({
     punctuation: {
         type: Number,
         required: true
@@ -11,6 +11,6 @@ const ClassificationSchema = mongoose.Schema({
     }
 });
 
-const Classification = mongoose.model('Classification', ClassificationSchema);
+const PilotClassification = mongoose.model('PilotClassification', PilotClassificationSchema);
 
-module.exports = Classification;
+module.exports = PilotClassification;
