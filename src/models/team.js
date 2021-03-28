@@ -29,6 +29,9 @@ const TeamSchema = mongoose.Schema({
         required: true,
         default: 0
     },
+    gridUrl: {
+        type: String,
+    },
     pilots: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Pilot',
