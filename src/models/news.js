@@ -20,6 +20,9 @@ const NewsSchema = mongoose.Schema({
     newsUrl: {
         type: String
     },
+    newsVideoUrl: {
+        type: String
+    },
     author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Pilot',
