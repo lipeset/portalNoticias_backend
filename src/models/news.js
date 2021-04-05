@@ -23,6 +23,9 @@ const NewsSchema = mongoose.Schema({
     newsVideoUrl: {
         type: String
     },
+    newsPicCarousel: [{
+        type: String
+    }],
     author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Pilot',
