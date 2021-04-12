@@ -63,4 +63,4 @@ router.delete('/:picId', async (req, res) => { //DELETAR NOTÍCIA
     }
 })
 
-module.exports = app => app.use('/news', router);
+module.exports = app => app.use('/pics', router);
