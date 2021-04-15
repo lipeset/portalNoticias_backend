@@ -1,6 +1,10 @@
 const mongoose = require('../database/index');
 
 const VideosSchema = mongoose.Schema({
+    videoName: {
+        type: String,
+        required: true
+    },
     muralVideos: [{
         type: String
     }]
