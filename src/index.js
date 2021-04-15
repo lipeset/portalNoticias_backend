@@ -14,5 +14,6 @@ require('./controller/newsController')(app);
 require('./controller/pilotClassificationController')(app);
 require('./controller/teamClassificationController')(app);
 require('./controller/picsController')(app);
+require('./controller/videosController')(app);
 
 app.listen(process.env.PORT || 3001);
