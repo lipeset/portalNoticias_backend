@@ -1,13 +1,14 @@
 const mongoose = require('../database/index');
 
 const VideosSchema = mongoose.Schema({
-    videoName: {
+    title: {
         type: String,
         required: true
     },
-    muralVideos: [{
-        type: String
-    }]
+    videoLink: {
+        type: String,
+        required: true
+    }
 });
 
 const Videos = mongoose.model('Videos', VideosSchema);
