@@ -48,6 +48,15 @@ const PilotSchema = mongoose.Schema({
     profileUrl: {
         type: String,
     },
+    bestAldeiaLap: {
+        type: String,
+    },
+    bestKgvLap: {
+        type: String,
+    },
+    bestInterlagosLap: {
+        type: String,
+    },
     createdAt: {
         type: Date,
         default: Date.now
