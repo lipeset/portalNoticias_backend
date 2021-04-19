@@ -15,5 +15,6 @@ require('./controller/pilotClassificationController')(app);
 require('./controller/teamClassificationController')(app);
 require('./controller/picsController')(app);
 require('./controller/videosController')(app);
+require('./controller/lastRaceController')(app);
 
 app.listen(process.env.PORT || 3001);
