@@ -15,6 +15,6 @@ const LastRaceSchema = mongoose.Schema({
     }]
 });
 
-const Pics = mongoose.model('Pics', LastRaceSchema);
+const LastRace = mongoose.model('LastRace', LastRaceSchema);
 
-module.exports = Pics;
+module.exports = LastRace;
