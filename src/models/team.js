@@ -32,9 +32,36 @@ const TeamSchema = mongoose.Schema({
     gridUrl: {
         type: String,
     },
+    bestAldeiaLap: {
+        type: String,
+    },
+    bestKgvLap: {
+        type: String,
+    },
+    bestInterlagosLap: {
+        type: String,
+    },
+    firstGpPoints: {
+        type: Number,
+    },
+    secondGpPoints: {
+        type: Number,
+    },
+    thirdGpPoints: {
+        type: Number,
+    },
+    fourthGpPoints: {
+        type: Number,
+    },
+    fifithGpPoints: {
+        type: Number,
+    },
+    sixthGpPoints: {
+        type: Number,
+    },
     pilots: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Pilot',
+        ref: 'Pilot'
     }]
 });
 

@@ -20,9 +20,8 @@ const PilotSchema = mongoose.Schema({
         default: 0
     },
     highGridPosition: {
-        type: Number,
-        required: true,
-        default: 0
+        type: String,
+        required: true
     },
     polePosition: {
         type: Number,
@@ -57,9 +56,23 @@ const PilotSchema = mongoose.Schema({
     bestInterlagosLap: {
         type: String,
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
+    firstGpPoints: {
+        type: Number,
+    },
+    secondGpPoints: {
+        type: Number,
+    },
+    thirdGpPoints: {
+        type: Number,
+    },
+    fourthGpPoints: {
+        type: Number,
+    },
+    fifithGpPoints: {
+        type: Number,
+    },
+    sixthGpPoints: {
+        type: Number,
     }
 });
 
