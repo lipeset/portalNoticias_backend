@@ -21,7 +21,7 @@ router.get('/', async (req, res) => { //GET ALL
 
 router.get('/:lastraceId', async (req, res) => { //GET BY ID
     try {
-        const lastrace = await LastRace.findById(req.params.lastraceId).populate('pilot', 'team');
+        const lastrace = await LastRace.findById(req.params.lastraceId).populate(['pilot', 'team']);
 
         return res.send(lastrace);
 
