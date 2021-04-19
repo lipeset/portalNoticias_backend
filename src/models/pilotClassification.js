@@ -5,6 +5,11 @@ const PilotClassificationSchema = mongoose.Schema({
         type: Number,
         required: true
     },
+    win: {
+        type: Number,
+        required: true,
+        default: 0
+    },
     pilot: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Pilot',

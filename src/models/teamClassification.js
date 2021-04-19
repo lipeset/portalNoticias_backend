@@ -5,6 +5,11 @@ const TeamClassificationSchema = mongoose.Schema({
         type: Number,
         required: true
     },
+    win: {
+        type: Number,
+        required: true,
+        default: 0
+    },
     team: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Team',
