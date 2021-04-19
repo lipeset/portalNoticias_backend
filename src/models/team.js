@@ -44,19 +44,37 @@ const TeamSchema = mongoose.Schema({
     firstGpPoints: {
         type: Number,
     },
+    firstGpFinish: {
+        type: Number,
+    },
     secondGpPoints: {
+        type: Number,
+    },
+    secondGpFinish: {
         type: Number,
     },
     thirdGpPoints: {
         type: Number,
     },
+    thirdGpFinish: {
+        type: Number,
+    },
     fourthGpPoints: {
+        type: Number,
+    },
+    fourthGpFinish: {
         type: Number,
     },
     fifithGpPoints: {
         type: Number,
     },
+    fifithGpFinish: {
+        type: Number,
+    },
     sixthGpPoints: {
+        type: Number,
+    },
+    sixthGpFinish: {
         type: Number,
     },
     pilots: [{
