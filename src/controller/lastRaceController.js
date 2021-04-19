@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => { //GET ALL
     try {
-        const lastrace = await LastRace.find().populate('pilot', 'team');
+        const lastrace = await LastRace.find().populate(['pilot', 'team']);
 
         if (lastrace.length < 1) {
             return res.send("Nenhuma corrida.")
