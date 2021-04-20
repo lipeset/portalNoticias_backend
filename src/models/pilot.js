@@ -62,11 +62,17 @@ const PilotSchema = mongoose.Schema({
     firstGpFinish: {
         type: Number,
     },
+    firstBestLap: {
+        type: String,
+    },
     secondGpPoints: {
         type: Number,
     },
     secondGpFinish: {
         type: Number,
+    },
+    secondBestLap: {
+        type: String,
     },
     thirdGpPoints: {
         type: Number,
@@ -74,11 +80,17 @@ const PilotSchema = mongoose.Schema({
     thirdGpFinish: {
         type: Number,
     },
+    thirdBestLap: {
+        type: String,
+    },
     fourthGpPoints: {
         type: Number,
     },
     fourthGpFinish: {
         type: Number,
+    },
+    fourthBestLap: {
+        type: String,
     },
     fifithGpPoints: {
         type: Number,
@@ -86,12 +98,18 @@ const PilotSchema = mongoose.Schema({
     fifithGpFinish: {
         type: Number,
     },
+    fifithBestLap: {
+        type: String,
+    },
     sixthGpPoints: {
         type: Number,
     },
     sixthGpFinish: {
         type: Number,
-    }
+    },
+    sixthBestLap: {
+        type: String,
+    },
 });
 
 const Pilot = mongoose.model('Pilot', PilotSchema);
