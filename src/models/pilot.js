@@ -56,6 +56,9 @@ const PilotSchema = mongoose.Schema({
     bestInterlagosLap: {
         type: String,
     },
+    bestSanMarinoLap: {
+        type: String,
+    },
     firstGpPoints: {
         type: Number,
     },
