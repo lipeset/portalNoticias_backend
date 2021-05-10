@@ -57,7 +57,7 @@ const PilotSchema = mongoose.Schema({
         type: String,
     },
     bestSanMarinoLap: {
-        type: String,
+        type: String
     },
     firstGpPoints: {
         type: Number,

@@ -42,7 +42,7 @@ const TeamSchema = mongoose.Schema({
         type: String,
     },
     bestSanMarinoLap: {
-        type: String,
+        type: String
     },
     firstGpPoints: {
         type: Number,
