@@ -113,6 +113,9 @@ const PilotSchema = mongoose.Schema({
     sixthBestLap: {
         type: String,
     },
+    biography: {
+        type: String,
+    }
 });
 
 const Pilot = mongoose.model('Pilot', PilotSchema);

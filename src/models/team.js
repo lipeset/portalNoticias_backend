@@ -101,7 +101,10 @@ const TeamSchema = mongoose.Schema({
     pilots: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Pilot'
-    }]
+    }],
+    biography: {
+        type: String,
+    }
 });
 
 const Team = mongoose.model('Team', TeamSchema);
