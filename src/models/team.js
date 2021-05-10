@@ -105,6 +105,9 @@ const TeamSchema = mongoose.Schema({
     teamPics: [{
         type: String
     }],
+    biography: {
+        type: String,
+    }
 });
 
 const Team = mongoose.model('Team', TeamSchema);
