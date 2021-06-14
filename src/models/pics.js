@@ -1,9 +1,9 @@
 const mongoose = require('../database/index');
 
 const PicsSchema = mongoose.Schema({
-    muralPics: {
+    muralPics: [{
         type: String
-    }
+    }]
 });
 
 const Pics = mongoose.model('Pics', PicsSchema);
