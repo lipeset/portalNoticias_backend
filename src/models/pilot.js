@@ -122,7 +122,7 @@ const PilotSchema = mongoose.Schema({
         type: String,
     },
     active: {
-        type: Boolean
+        type: Number
     }
 });
 
