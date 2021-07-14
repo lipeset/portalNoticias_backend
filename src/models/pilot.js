@@ -5,6 +5,11 @@ const PilotSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    champCamp: {
+        type: Number,
+        required: true,
+        default: 0
+    },
     team: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Team'
@@ -115,6 +120,9 @@ const PilotSchema = mongoose.Schema({
     },
     biography: {
         type: String,
+    },
+    active: {
+        type: Boolean
     }
 });
 

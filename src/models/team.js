@@ -107,6 +107,9 @@ const TeamSchema = mongoose.Schema({
     }],
     biography: {
         type: String,
+    },
+    active: {
+        type: Boolean
     }
 });
 
